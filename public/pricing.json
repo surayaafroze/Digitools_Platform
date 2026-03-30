@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "title": "Starter",
+    "price": "$9",
+    "duration": "per month",
+     "description": "Ideal for small teams who need full access to standard tools with priority support.",
+    "features": [
+      "Access to limited tools",
+      "Basic support",
+      "1 project included",
+      "Email updates"
+    ]
+    ,
+    "buttonText": "Subscribe"
+    
+  },
+
+  {
+    "id": 2,
+    "title": "Pro",
+    "popular":"true",
+    "price": "$59",
+    "duration": "per month",
+    "description": "Perfect for individuals who want to explore basic tools and features.",
+
+    "features": [
+      "Access to all tools including premium",
+      "24/7 dedicated support",
+      "Unlimited projects",
+      "Advanced analytics",
+      "Team collaboration",
+      "Personal account manager"
+    ]
+    ,
+    "buttonText": "Subscribe"
+   
+  },
+
+  {
+    "id": 3,
+    "title": "Enterprise",
+    "price": "$29",
+    "duration": "per month",
+      "description": "Best for professionals and large teams requiring all features, advanced analytics, and dedicated support.",
+    "features": [
+      "Access to all standard tools",
+      "Priority support",
+      "5 projects included",
+      "Customizable options",
+      "Team collaboration"
+    ],
+    "buttonText": "Subscribe"
+    
+  }
+
+]

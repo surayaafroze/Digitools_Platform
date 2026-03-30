@@ -1,19 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+
+
 import './App.css'
+import Banner from './component/Banner'
+import Navbar from './component/Navbar'
+import Pricing from './component/pricing_component/Pricing'
+import Product from './component/Product'
+import State from './component/State'
+
+
+const pricingFetch= fetch('/pricing.json').then(res=>res.json())
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
+    <Navbar></Navbar> 
+<Banner></Banner>
+<State></State>
      
 
-     
-
-      
+   <Product></Product> 
+   <Pricing pricingFetch={pricingFetch}></Pricing>  
     </>
   )
 }
