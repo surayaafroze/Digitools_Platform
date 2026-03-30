@@ -1,0 +1,69 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Resume Kit",
+    "description": "Basic resume builder for beginners with essential tools.",
+    "price": 9.99,
+    "period": "one-time",
+    "tag": "new",
+     "icon" : "/assest_component/assets/products/operation.png",
+    "tagType": "new",
+    "features": ["20+ templates", "Basic customization", "Export to PDF"]
+  },
+  {
+    "id": 2,
+    "name": "Pro Resume Builder",
+    "description": "Advanced resume builder with ATS-friendly optimization.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "popular",
+     "icon" : "/assest_component/assets/products/portfolio.png",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Cover letter builder"]
+  },
+  {
+    "id": 3,
+    "name": "Career Boost Pack",
+    "description": "Complete package for job seekers with premium features.",
+    "price": 49.99,
+    "period": "yearly",
+    "tag": "best seller",
+     "icon" : "/assest_component/assets/products/social-media.png",
+    "tagType": "best seller",
+    "features": ["Unlimited resumes", "LinkedIn optimization", "Priority support"]
+  },
+  {
+    "id": 4,
+    "name": "Freelancer Toolkit",
+    "description": "Perfect for freelancers to create portfolios and resumes.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "icon" : "/assest_component/assets/products/writing.png",
+    "features": ["Portfolio builder", "Client proposals", "Custom branding"]
+  },
+  {
+    "id": 5,
+    "name": "Student Pack",
+    "description": "Affordable plan for students and fresh graduates.",
+    "price": 5.99,
+    "period": "monthly",
+    "tag": "new",
+     "icon" : "/assest_component/assets/products/design-tool.png",
+    "tagType": "new",
+    "features": ["10+ templates", "Simple editor", "Download PDF"]
+  },
+  {
+    "id": 6,
+    "name": "Executive Pro Suite",
+    "description": "Premium tools for professionals and executives.",
+    "price": 79.99,
+    "period": "yearly",
+    "tag": "best seller",
+     "icon" : "/assest_component/assets/products/operation.png",
+    "tagType": "best seller",
+    "features": ["Executive templates", "AI suggestions", "Personal branding tools"]
+  }
+  
+]

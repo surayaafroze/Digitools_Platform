@@ -13,7 +13,7 @@ const Pricing = ({pricingFetch}) => {
   <p className='text-[16px] text-[#627382]'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
 </div>
       <div className='flex justify-between gap-5 mt-7'>
-        {pricingPromise.map(prices=> <PriceCard prices={prices}></PriceCard>)}
+        {pricingPromise.map(prices=> <PriceCard prices={prices} key={prices.id}></PriceCard>)}
       </div>
     </div>
   );

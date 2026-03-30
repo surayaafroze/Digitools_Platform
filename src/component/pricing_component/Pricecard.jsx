@@ -6,7 +6,7 @@ const PriceCard = ({prices}) => {
   const {title,price,features,description,buttonText,popular}=prices;
   return (
     <div className='flex'>
-      <div className={`card w-96  ${popular ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : "bg-base-100"} shadow-sm flex-1 rounded-2xl`}>
+      <div className={`card w-96  ${popular ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : "bg-[#F2F2F2]"} shadow-sm flex-1 rounded-2xl `}>
   <div className="card-body">
     {popular&& <span className="badge badge-xs badge-warning">Most Popular</span>}
     <div className='space-y-5'>
