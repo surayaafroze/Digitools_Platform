@@ -2,7 +2,7 @@ import { Check } from 'lucide-react';
 import React from 'react';
 
 const PriceCard = ({prices}) => {
-  console.log(prices)
+  // console.log(prices)
   const {title,price,features,description,buttonText,popular}=prices;
   return (
     <div className='flex'>

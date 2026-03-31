@@ -1,9 +1,16 @@
-import React, { use } from 'react';
+import React, { use, useState } from 'react';
 import PremiumCard from './PremiumCard';
+import Carts from '../cart_component/Carts';
 
 const Premium = ({premiumFetch,count,setCount}) => {
   const premiumTools=use(premiumFetch);
   console.log(premiumTools)
+
+const [colorChange,setColorChange]=useState("Products")
+
+// carts er jonoo
+const [newCards,setNewCards]=useState([]);
+
   return (
     <div className='w-10/12 mx-auto p-5 mt-16'>
       <div className='text-center space-y-5'>
@@ -13,16 +20,38 @@ const Premium = ({premiumFetch,count,setCount}) => {
 
 
       {/* name of each tab group should be unique */}
-<div className="tabs ">
-  <input type="radio" name="my_tabs_1" className="tab bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full p-2.5 text-white" aria-label="Tab 1" defaultChecked />
-  <input type="radio" name="my_tabs_1" className="tab bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full p-2.5 text-white" aria-label="Tab 2"  />
+
+  
  
+
+ {/* name of each tab group should be unique */}
+<div className="flex justify-center gap-1 mt-9">
+ 
+ 
+ <button 
+ onClick={()=>setColorChange("Products")}
+ className={`w-40 p-3 rounded-full shadow ${colorChange==="Products"?"bg-linear-to-r from-[#4F39F6] to-[#9514FA]  text-white":"bg-base-100"}`}       
+ >Products</button>
+
+
+ <button onClick={()=>setColorChange("Cart")}
+ className={`w-40 p-3 rounded-full shadow ${colorChange==="Cart"?"bg-linear-to-r from-[#4F39F6] to-[#9514FA]  text-white":"bg-base-100"}`}>Cart({count})</button>
+  
 </div>
 
 
-      <div className='grid grid-cols-3 gap-3 items-center mt-7'>
-        {premiumTools.map(premium=> <PremiumCard premium={premium} setCount={setCount} count={count}></PremiumCard>   )}
-      </div>
+
+    {colorChange==="Products"? <div className='grid grid-cols-3 gap-3 items-center mt-7'>
+      {premiumTools.map(premium=> <PremiumCard 
+      key={premium.id}
+        premium={premium} 
+        setCount={setCount} 
+        count={count}
+        newCards={newCards}
+        setNewCards={setNewCards}
+        >
+        </PremiumCard>   )}
+    </div> : <Carts newCards={newCards}></Carts>}
 
 
     </div>
