@@ -10,9 +10,9 @@ import Product from './component/Product'
 import State from './component/State'
 
 
-const pricingFetch= fetch('/pricing.json').then(res=>res.json());
+const pricingFetch= fetch('./pricing.json').then(res=>res.json());
 
-const premiumFetch=fetch('/premium_Tools.json').then(res=>res.json());
+const premiumFetch=fetch('./premium_Tools.json').then(res=>res.json());
 
 
 
