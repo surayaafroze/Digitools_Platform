@@ -1,6 +1,6 @@
 
 
-
+import { Suspense, useState } from 'react'
 import './App.css'
 import Banner from './component/Banner'
 import Navbar from './component/Navbar'
@@ -46,9 +46,9 @@ function App() {
 
 
    <Product></Product> 
-   
+   <Suspense fallback={<p>Loading...</p>}>
     <Pricing pricingFetch={pricingFetch}></Pricing>  
- 
+   </Suspense>
    <Transform></Transform>
 
 
